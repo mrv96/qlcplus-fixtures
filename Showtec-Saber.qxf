@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>mrv96</Author>
+ </Creator>
+ <Manufacturer>Showtec</Manufacturer>
+ <Model>Saber</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Continuous pan">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="15">No function</Capability>
+  <Capability Min="16" Max="135" Preset="RotationClockwiseSlowToFast">Clockwise rotation (Slow to fast)</Capability>
+  <Capability Min="136" Max="255" Preset="RotationCounterClockwiseSlowToFast">Counterclockwise rotation (Slow to fast)</Capability>
+ </Channel>
+ <Channel Name="Continuous tilt">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="15">No function</Capability>
+  <Capability Min="16" Max="135" Preset="RotationClockwiseSlowToFast">Clockwise rotation (Slow to fast)</Capability>
+  <Capability Min="136" Max="255" Preset="RotationCounterClockwiseSlowToFast">Counterclockwise rotation (Slow to fast)</Capability>
+ </Channel>
+ <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Linear strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">Off</Capability>
+  <Capability Min="11" Max="255" Preset="StrobeSlowToFast">Strobe (Slow to fast)</Capability>
+ </Channel>
+ <Channel Name="Random strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10">Off</Capability>
+  <Capability Min="11" Max="255" Preset="StrobeRandomSlowToFast">Random Strobe (Slow to fast)</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10" Preset="ShutterOpen">Off</Capability>
+  <Capability Min="11" Max="128" Preset="StrobeRandomSlowToFast">Random strobe (Slow to fast)</Capability>
+  <Capability Min="129" Max="255" Preset="StrobeSlowToFast">Linear strobe (Slow to fast)</Capability>
+ </Channel>
+ <Channel Name="Color macro">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7">No function</Capability>
+  <Capability Min="8" Max="13" Preset="ColorMacro" Res1="#ff0000">Color 1</Capability>
+  <Capability Min="14" Max="20" Preset="ColorMacro" Res1="#ff3131">Color 2</Capability>
+  <Capability Min="21" Max="27" Preset="ColorMacro" Res1="#ff6363">Color 3</Capability>
+  <Capability Min="28" Max="34" Preset="ColorMacro" Res1="#ff3100">Color 4</Capability>
+  <Capability Min="35" Max="41" Preset="ColorMacro" Res1="#ff9600">Color 5</Capability>
+  <Capability Min="42" Max="48" Preset="ColorMacro" Res1="#ffff00">Color 6</Capability>
+  <Capability Min="49" Max="55" Preset="ColorMacro" Res1="#ffff25">Color 7</Capability>
+  <Capability Min="56" Max="62" Preset="ColorMacro" Res1="#7fff7f">Color 8</Capability>
+  <Capability Min="63" Max="69" Preset="ColorMacro" Res1="#4bff4b">Color 9</Capability>
+  <Capability Min="70" Max="76" Preset="ColorMacro" Res1="#19ff19">Color 10</Capability>
+  <Capability Min="77" Max="83" Preset="ColorMacro" Res1="#00ff00">Color 11</Capability>
+  <Capability Min="84" Max="90" Preset="ColorMacro" Res1="#00ff32">Color 12</Capability>
+  <Capability Min="91" Max="97" Preset="ColorMacro" Res1="#00ff96">Color 13</Capability>
+  <Capability Min="98" Max="104" Preset="ColorMacro" Res1="#00ffff">Color 14</Capability>
+  <Capability Min="105" Max="111" Preset="ColorMacro" Res1="#25ffff">Color 15</Capability>
+  <Capability Min="112" Max="118" Preset="ColorMacro" Res1="#4bffff">Color 16</Capability>
+  <Capability Min="119" Max="125" Preset="ColorMacro" Res1="#7fb1ff">Color 17</Capability>
+  <Capability Min="126" Max="132" Preset="ColorMacro" Res1="#3131ff">Color 18</Capability>
+  <Capability Min="133" Max="139" Preset="ColorMacro" Res1="#1919ff">Color 19</Capability>
+  <Capability Min="140" Max="146" Preset="ColorMacro" Res1="#0000ff">Color 20</Capability>
+  <Capability Min="147" Max="153" Preset="ColorMacro" Res1="#4a00ff">Color 21</Capability>
+  <Capability Min="154" Max="160" Preset="ColorMacro" Res1="#9f00ff">Color 22</Capability>
+  <Capability Min="161" Max="167" Preset="ColorMacro" Res1="#ff00ff">Color 23</Capability>
+  <Capability Min="168" Max="174" Preset="ColorMacro" Res1="#ff00af">Color 24</Capability>
+  <Capability Min="175" Max="181" Preset="ColorMacro" Res1="#ff0063">Color 25</Capability>
+  <Capability Min="182" Max="188" Preset="ColorMacro" Res1="#ff1973">Color 26</Capability>
+  <Capability Min="189" Max="195" Preset="ColorMacro" Res1="#ff192f">Color 27</Capability>
+  <Capability Min="196" Max="202" Preset="ColorMacro" Res1="#ff0c24">Color 28</Capability>
+  <Capability Min="203" Max="209" Preset="ColorMacro" Res1="#ff0018">Color 29</Capability>
+  <Capability Min="210" Max="216" Preset="ColorMacro" Res1="#ffffff">Color 30</Capability>
+  <Capability Min="217" Max="223" Preset="ColorMacro" Res1="#ffffe6">Color 31</Capability>
+  <Capability Min="224" Max="230" Preset="ColorMacro" Res1="#e6e6ff">Color 32</Capability>
+  <Capability Min="231" Max="255" Preset="ColorMacro" Res1="#ffffff">Color 33</Capability>
+ </Channel>
+ <Channel Name="Color flow">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="15">No function</Capability>
+  <Capability Min="16" Max="31">Color jump 1</Capability>
+  <Capability Min="32" Max="47">Color jump 2</Capability>
+  <Capability Min="48" Max="63">Color jump 3</Capability>
+  <Capability Min="64" Max="79">Color jump 4</Capability>
+  <Capability Min="80" Max="95">Color jump 5</Capability>
+  <Capability Min="96" Max="111">Color jump 6</Capability>
+  <Capability Min="144" Max="159">Color fade 1</Capability>
+  <Capability Min="160" Max="175">Color fade 2</Capability>
+  <Capability Min="176" Max="191">Color fade 3</Capability>
+  <Capability Min="192" Max="207">Color fade 4</Capability>
+  <Capability Min="208" Max="223">Color fade 5</Capability>
+  <Capability Min="224" Max="239">Color fade 6</Capability>
+  <Capability Min="240" Max="255">Color fade 7</Capability>
+ </Channel>
+ <Channel Name="Color flow speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255" Preset="SlowToFast">Color flow (Slow to fast)</Capability>
+ </Channel>
+ <Channel Name="Functions">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="5">No function</Capability>
+  <Capability Min="6" Max="10">Show 1</Capability>
+  <Capability Min="11" Max="20">Show 2</Capability>
+  <Capability Min="21" Max="30">Show 3</Capability>
+  <Capability Min="31" Max="40">Show 4</Capability>
+  <Capability Min="41" Max="50">Show 5</Capability>
+  <Capability Min="51" Max="60">Show 6</Capability>
+  <Capability Min="61" Max="70">Show 7</Capability>
+  <Capability Min="71" Max="80">Show 8</Capability>
+  <Capability Min="81" Max="90">Slave 1</Capability>
+  <Capability Min="91" Max="96">Slave 2</Capability>
+  <Capability Min="97" Max="160" Preset="SmallToBig">Sound sensitivity (Low to high)</Capability>
+  <Capability Min="161" Max="170">Pan invert</Capability>
+  <Capability Min="171" Max="180">Tilt invert</Capability>
+  <Capability Min="181" Max="190">Pan normal</Capability>
+  <Capability Min="191" Max="200">Tilt normal</Capability>
+  <Capability Min="201" Max="220">Blackout during pan/tilt movement</Capability>
+  <Capability Min="221" Max="240">Reset (after 5 seconds)</Capability>
+  <Capability Min="241" Max="255">No function</Capability>
+ </Channel>
+ <Channel Name="Red color intensity" Preset="IntensityDimmer"/>
+ <Channel Name="Green color intensity" Preset="IntensityDimmer"/>
+ <Channel Name="Blue color intensity" Preset="IntensityDimmer"/>
+ <Channel Name="White color intensity" Preset="IntensityDimmer"/>
+ <Mode Name="10 Channels">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2" ActsOn="0">Continuous pan</Channel>
+  <Channel Number="3" ActsOn="1">Continuous tilt</Channel>
+  <Channel Number="4">Dimmer</Channel>
+  <Channel Number="5">Strobe</Channel>
+  <Channel Number="6">Color macro</Channel>
+  <Channel Number="7">Color flow</Channel>
+  <Channel Number="8" ActsOn="7">Color flow speed</Channel>
+  <Channel Number="9">Functions</Channel>
+ </Mode>
+ <Mode Name="14 Channels">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt speed</Channel>
+  <Channel Number="5" ActsOn="0">Continuous pan</Channel>
+  <Channel Number="6" ActsOn="2">Continuous tilt</Channel>
+  <Channel Number="7">Dimmer</Channel>
+  <Channel Number="8">Strobe</Channel>
+  <Channel Number="9">Functions</Channel>
+  <Channel Number="10">Red color intensity</Channel>
+  <Channel Number="11">Green color intensity</Channel>
+  <Channel Number="12">Blue color intensity</Channel>
+  <Channel Number="13">White color intensity</Channel>
+ </Mode>
+ <Mode Name="18 Channels">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt speed</Channel>
+  <Channel Number="5" ActsOn="0">Continuous pan</Channel>
+  <Channel Number="6" ActsOn="2">Continuous tilt</Channel>
+  <Channel Number="7">Dimmer</Channel>
+  <Channel Number="8">Linear strobe</Channel>
+  <Channel Number="9">Random strobe</Channel>
+  <Channel Number="10">Color macro</Channel>
+  <Channel Number="11">Color flow</Channel>
+  <Channel Number="12" ActsOn="11">Color flow speed</Channel>
+  <Channel Number="13">Functions</Channel>
+  <Channel Number="14">Red color intensity</Channel>
+  <Channel Number="15">Green color intensity</Channel>
+  <Channel Number="16">Blue color intensity</Channel>
+  <Channel Number="17">White color intensity</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="587" ColourTemperature="0"/>
+  <Dimensions Weight="5.2" Width="215" Height="330" Depth="215"/>
+  <Lens Name="Other" DegreesMin="4" DegreesMax="4"/>
+  <Focus Type="Head" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="70" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

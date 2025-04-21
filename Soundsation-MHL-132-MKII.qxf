@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.0</Version>
+  <Author>Matteo</Author>
+ </Creator>
+ <Manufacturer>Soundsation</Manufacturer>
+ <Model>MHL-132 MKII</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Color Wheel">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="6" Color="#ffffff">WHITE</Capability>
+  <Capability Min="7" Max="13" Color="#ff0000">RED</Capability>
+  <Capability Min="14" Max="20" Color="#ffff00">YELLO</Capability>
+  <Capability Min="21" Max="27" Color="#00ffff">AZZUR</Capability>
+  <Capability Min="28" Max="34">LIGHT GREEN</Capability>
+  <Capability Min="35" Max="41" Color="#ff007f">PINK</Capability>
+  <Capability Min="42" Max="48" Color="#ffff7f">LIGHT YELLO</Capability>
+  <Capability Min="49" Max="55" Color="#00ff00">GREEN</Capability>
+  <Capability Min="56" Max="62" Color="#bcbc00">GIALL SCURO</Capability>
+  <Capability Min="63" Max="69" Color="#ff557f">PINK</Capability>
+  <Capability Min="70" Max="76" Color="#5555ff">UV</Capability>
+  <Capability Min="77" Max="83" Color="#0026ff">BLUE</Capability>
+  <Capability Min="84" Max="90" Color="#aaffff">BIANC SPORC</Capability>
+  <Capability Min="91" Max="97" Color="#00aaff">CIANO</Capability>
+  <Capability Min="98" Max="102">CIANO BIANC</Capability>
+  <Capability Min="103" Max="109">BIANC ROSSO</Capability>
+  <Capability Min="110" Max="116">ROSSO GIALL</Capability>
+  <Capability Min="117" Max="123">GIALL AZZUR</Capability>
+  <Capability Min="124" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="5" Res="ClayPaky/gobo00011.png"></Capability>
+  <Capability Min="6" Max="39"></Capability>
+  <Capability Min="40" Max="41" Res="ClayPaky/gobo00012.png"></Capability>
+  <Capability Min="43" Max="45" Res="ClayPaky/gobo00027.png"></Capability>
+ </Channel>
+ <Channel Name="Eight Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Prism Rotation">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Prism Angle</Capability>
+  <Capability Min="128" Max="191"> Rotating clockwise</Capability>
+  <Capability Min="192" Max="255"> Rotating anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Frost">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Focus">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Pan fine">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Tilt fine">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt autorun">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Lamp ON/OFF">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="100" Max="105">Lamp OFF</Capability>
+  <Capability Min="200" Max="205">Lamp ON</Capability>
+ </Channel>
+ <Channel Name="RESET">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="16 Canali">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">Color Wheel</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Dimmer</Channel>
+  <Channel Number="3">Gobo Wheel</Channel>
+  <Channel Number="4">Eight Prism</Channel>
+  <Channel Number="5">Prism Rotation</Channel>
+  <Channel Number="6">Frost</Channel>
+  <Channel Number="7">Focus</Channel>
+  <Channel Number="8">Pan fine</Channel>
+  <Channel Number="9">Pan</Channel>
+  <Channel Number="10">Tilt fine</Channel>
+  <Channel Number="11">Tilt</Channel>
+  <Channel Number="12">Pan/Tilt Speed</Channel>
+  <Channel Number="13">Pan/Tilt autorun</Channel>
+  <Channel Number="14">Lamp ON/OFF</Channel>
+  <Channel Number="15">RESET</Channel>
+ </Mode>
+</FixtureDefinition>

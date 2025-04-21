@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.2</Version>
+  <Author>Matteo</Author>
+ </Creator>
+ <Manufacturer>Soundsation</Manufacturer>
+ <Model>MHL-200 MKII</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Colour Wheel">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="6" Preset="ColorMacro" Res1="#ffffff">White</Capability>
+  <Capability Min="7" Max="13" Preset="ColorMacro" Res1="#c41c1a">Red</Capability>
+  <Capability Min="14" Max="20" Preset="ColorMacro" Res1="#ffed00">Yellow</Capability>
+  <Capability Min="21" Max="27" Preset="ColorMacro" Res1="#aaffff">Aquamarine</Capability>
+  <Capability Min="28" Max="34" Preset="ColorMacro" Res1="#9ec233">Light Green</Capability>
+  <Capability Min="35" Max="41" Preset="ColorMacro" Res1="#ed8080">Pink</Capability>
+  <Capability Min="42" Max="48" Preset="ColorMacro" Res1="#ffff7f">Light Yellow</Capability>
+  <Capability Min="49" Max="55" Preset="ColorMacro" Res1="#55aa00">Green</Capability>
+  <Capability Min="56" Max="62" Preset="ColorMacro" Res1="#e2cf00">Yellow Dark</Capability>
+  <Capability Min="63" Max="69" Preset="ColorMacro" Res1="#e30082">Magenta</Capability>
+  <Capability Min="70" Max="76" Preset="ColorMacro" Res1="#5500ff">UV</Capability>
+  <Capability Min="77" Max="83" Preset="ColorMacro" Res1="#004f99">Blue</Capability>
+  <Capability Min="84" Max="90" Preset="ColorMacro" Res1="#dcdcdc">Grey</Capability>
+  <Capability Min="91" Max="97" Preset="ColorMacro" Res1="#00a6eb">Cyan</Capability>
+ </Channel>
+ <Channel Name="Stop / Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="3">Closed</Capability>
+  <Capability Min="4" Max="103">Strobe (slow 1 flash/sec to fast 12 flashes/sec)</Capability>
+  <Capability Min="104" Max="107">Open</Capability>
+  <Capability Min="108" Max="207">Pulsation (Slow 30rpm to fast 360rpm)</Capability>
+  <Capability Min="208" Max="212">Open</Capability>
+  <Capability Min="213" Max="225">Random slow strobe</Capability>
+  <Capability Min="226" Max="238">Random medium strobe</Capability>
+  <Capability Min="239" Max="251">Random fast strobe</Capability>
+  <Capability Min="252" Max="255">Open</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Intensity 0 to 100%</Capability>
+ </Channel>
+ <Channel Name="Static Gobo Change">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="39" Preset="GoboMacro" Res1="ClayPaky/gobo00011.png">Open</Capability>
+  <Capability Min="40" Max="41" Preset="GoboMacro" Res1="Others/gobo00007.png"></Capability>
+  <Capability Min="43" Max="45" Preset="GoboMacro" Res1="ClayPaky/gobo00027.png">8</Capability>
+ </Channel>
+ <Channel Name="Prism Insertion">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Prism excluded</Capability>
+  <Capability Min="128" Max="255">Prism inserted (0%-100%: 0.36 sec)</Capability>
+ </Channel>
+ <Channel Name="Prism Rotation">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="20">Position 0°</Capability>
+  <Capability Min="21" Max="41">Position 90°</Capability>
+  <Capability Min="42" Max="62">Position 180°</Capability>
+  <Capability Min="63" Max="83">Position 270°</Capability>
+  <Capability Min="84" Max="104">Position 360°</Capability>
+  <Capability Min="105" Max="126">Position 450°</Capability>
+  <Capability Min="127" Max="127">Position 540°</Capability>
+  <Capability Min="128" Max="190">Rotation (Fast 43rpm to slow 1.1rph)</Capability>
+  <Capability Min="191" Max="192">Stop</Capability>
+  <Capability Min="193" Max="255">Rotation (Slow 1.1rph to fast 43rpm)</Capability>
+ </Channel>
+ <Channel Name="speed Movement">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Movement (0%-100%: 0.33 sec)</Capability>
+ </Channel>
+ <Channel Name="Frost">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Frost insertion (excluded to inserted)</Capability>
+ </Channel>
+ <Channel Name="Focus">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">Focus (0%: Distant to 100%: Near)</Capability>
+ </Channel>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">Pan coarse (0° to 540°)</Capability>
+ </Channel>
+ <Channel Name="Pan Fine">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">Pan Fine (0.008°)</Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt Coarse (0° to 250°)</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt Fine (0.004°)</Capability>
+ </Channel>
+ <Channel Name="Function">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="11">Unused</Capability>
+  <Capability Min="12" Max="24">Pan-Tilt Function (Fast - Default)</Capability>
+  <Capability Min="25" Max="37">Pan-Tilt Function (Normal)</Capability>
+  <Capability Min="38" Max="50">Dimmer Curve Function (Conventional)</Capability>
+  <Capability Min="51" Max="62">Dimmer Curve Function (Linear - Default)</Capability>
+  <Capability Min="63" Max="255">Unused</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="25">Unused</Capability>
+  <Capability Min="26" Max="76">Effects Reset</Capability>
+  <Capability Min="77" Max="127">Pan/Tilt Reset</Capability>
+  <Capability Min="128" Max="255">Complete Reset</Capability>
+ </Channel>
+ <Channel Name="Lamp Control">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="25">Unused</Capability>
+  <Capability Min="26" Max="100">Lamp OFF</Capability>
+  <Capability Min="101" Max="255">Lamp ON</Capability>
+ </Channel>
+ <Channel Name="Pan - Tilt Time">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Pan - Tilt (0 to 310s)</Capability>
+ </Channel>
+ <Channel Name="Colour Time">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Colour Wheel (0 to 310s)</Capability>
+ </Channel>
+ <Channel Name="Beam Time">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Dimmer - Frost - Prism (0 to 310s)</Capability>
+ </Channel>
+ <Channel Name="Gobo Time">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Static Gobo (0 to 310s)</Capability>
+ </Channel>
+ <Mode Name="Standard">
+  <Physical>
+   <Bulb Type="MSD 200W" Lumens="7950" ColourTemperature="8000"/>
+   <Dimensions Weight="19" Width="405" Height="450" Depth="330"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="3.8"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="250"/>
+   <Technical PowerConsumption="200" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Colour Wheel</Channel>
+  <Channel Number="1">Stop / Strobe</Channel>
+  <Channel Number="2">Dimmer</Channel>
+  <Channel Number="3">Static Gobo Change</Channel>
+  <Channel Number="4">Prism Insertion</Channel>
+  <Channel Number="5">Prism Rotation</Channel>
+  <Channel Number="6">Frost</Channel>
+  <Channel Number="7">Focus</Channel>
+  <Channel Number="8">Pan</Channel>
+  <Channel Number="9">Pan Fine</Channel>
+  <Channel Number="10">Tilt</Channel>
+  <Channel Number="11">Tilt Fine</Channel>
+  <Channel Number="12">speed Movement</Channel>
+  <Channel Number="13">Function</Channel>
+  <Channel Number="14">Lamp Control</Channel>
+  <Channel Number="15">Reset</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

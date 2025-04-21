@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.4</Version>
+  <Author>matte</Author>
+ </Creator>
+ <Manufacturer>LEAM</Manufacturer>
+ <Model>flame machine</Model>
+ <Type>Effect</Type>
+ <Channel Name="FIRE">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="10">FIRE OFF</Capability>
+  <Capability Min="11" Max="255">FIRE ON</Capability>
+ </Channel>
+ <Channel Name="FIRE TIME" Preset="IntensityDimmer"/>
+ <Mode Name="2 CH">
+  <Channel Number="0">FIRE</Channel>
+  <Channel Number="1">FIRE TIME</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
