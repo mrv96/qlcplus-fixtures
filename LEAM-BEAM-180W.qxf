@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>matte</Author>
+ </Creator>
+ <Manufacturer>LEAM</Manufacturer>
+ <Model>BEAM 180W</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Color wheel">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="4">WHITE</Capability>
+  <Capability Min="5" Max="9">W+R</Capability>
+  <Capability Min="10" Max="14">RED</Capability>
+  <Capability Min="15" Max="19">R+O</Capability>
+  <Capability Min="20" Max="24">ORANGE</Capability>
+  <Capability Min="25" Max="29">O+Y</Capability>
+  <Capability Min="30" Max="34">YELLOW</Capability>
+  <Capability Min="35" Max="39">Y+G</Capability>
+  <Capability Min="40" Max="44">GREEN</Capability>
+  <Capability Min="45" Max="49">G+B</Capability>
+  <Capability Min="50" Max="54">BLUE</Capability>
+  <Capability Min="55" Max="59">B+M</Capability>
+  <Capability Min="60" Max="64">MAGENTA</Capability>
+  <Capability Min="65" Max="69">M+C</Capability>
+  <Capability Min="70" Max="74">CYAN</Capability>
+  <Capability Min="75" Max="79">C+G</Capability>
+  <Capability Min="80" Max="84">GREY</Capability>
+  <Capability Min="85" Max="89">G+P</Capability>
+  <Capability Min="90" Max="94">PINK</Capability>
+  <Capability Min="95" Max="99">P+LG</Capability>
+  <Capability Min="100" Max="104">LIGHT GREEN</Capability>
+  <Capability Min="105" Max="109">LG+CTO</Capability>
+  <Capability Min="110" Max="114">CTO WHITE</Capability>
+  <Capability Min="115" Max="119">CTO+W</Capability>
+  <Capability Min="120" Max="255">CAMBIO AUTO COLORI</Capability>
+ </Channel>
+ <Channel Name="Gobo wheel">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="5">OPEN</Capability>
+  <Capability Min="6" Max="10">Gobo1</Capability>
+  <Capability Min="11" Max="15">Gobo2</Capability>
+  <Capability Min="16" Max="20">Gobo3</Capability>
+  <Capability Min="21" Max="25">Gobo4</Capability>
+  <Capability Min="26" Max="30">Gobo5</Capability>
+  <Capability Min="31" Max="35">Gobo6</Capability>
+  <Capability Min="36" Max="40">Gobo7</Capability>
+  <Capability Min="41" Max="45">Gobo8</Capability>
+  <Capability Min="46" Max="50">Gobo9</Capability>
+  <Capability Min="51" Max="55">Gobo10</Capability>
+  <Capability Min="56" Max="60">Gobo11</Capability>
+  <Capability Min="61" Max="65">Gobo12</Capability>
+  <Capability Min="66" Max="70">Gobo13</Capability>
+  <Capability Min="71" Max="80">Gobo14</Capability>
+  <Capability Min="81" Max="255">GOBO CAMBIO AUTO</Capability>
+ </Channel>
+ <Channel Name="Focus" Preset="BeamFocusNearFar"/>
+ <Channel Name="Frost">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">OFF</Capability>
+  <Capability Min="128" Max="191">ON</Capability>
+  <Capability Min="192" Max="255">ruota 6 colori</Capability>
+ </Channel>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">OFF</Capability>
+  <Capability Min="128" Max="136">ON</Capability>
+  <Capability Min="137" Max="255">Prism rotation (Slow to fast)</Capability>
+ </Channel>
+ <Channel Name="Macro">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="5">OFF</Capability>
+  <Capability Min="6" Max="55">auto 1</Capability>
+  <Capability Min="56" Max="105">auto 2</Capability>
+  <Capability Min="106" Max="155">auto 3</Capability>
+  <Capability Min="156" Max="205">auto 4</Capability>
+  <Capability Min="206" Max="255">random</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="25">OFF</Capability>
+  <Capability Min="26" Max="76">motor reset</Capability>
+  <Capability Min="77" Max="127">xy motor reset</Capability>
+  <Capability Min="128" Max="255">reset</Capability>
+ </Channel>
+ <Mode Name="14ch">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Pan</Channel>
+  <Channel Number="3">Pan fine</Channel>
+  <Channel Number="4">Tilt</Channel>
+  <Channel Number="5">Tilt fine</Channel>
+  <Channel Number="6">Pan/Tilt speed</Channel>
+  <Channel Number="7">Color wheel</Channel>
+  <Channel Number="8">Gobo wheel</Channel>
+  <Channel Number="9">Focus</Channel>
+  <Channel Number="10">Frost</Channel>
+  <Channel Number="11">Prism</Channel>
+  <Channel Number="12">Macro</Channel>
+  <Channel Number="13">Reset</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>11</Channel>
+   <Channel>10</Channel>
+   <Channel>9</Channel>
+   <Channel>8</Channel>
+   <Channel>7</Channel>
+   <Channel>1</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="7" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="200" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

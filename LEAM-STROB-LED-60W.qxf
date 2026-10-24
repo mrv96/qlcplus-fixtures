@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.0</Version>
+  <Author>matte</Author>
+ </Creator>
+ <Manufacturer>LEAM</Manufacturer>
+ <Model>STROB LED 60W</Model>
+ <Type>Dimmer</Type>
+ <Channel Name="1" Preset="IntensityDimmer"/>
+ <Channel Name="2" Preset="IntensityDimmer"/>
+ <Channel Name="3" Preset="IntensityDimmer"/>
+ <Channel Name="4" Preset="IntensityDimmer"/>
+ <Mode Name="4CH">
+  <Channel Number="0">1</Channel>
+  <Channel Number="1">2</Channel>
+  <Channel Number="2">3</Channel>
+  <Channel Number="3">4</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="60" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

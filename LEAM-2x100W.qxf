@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>SCAJA</Author>
+ </Creator>
+ <Manufacturer>LEAM</Manufacturer>
+ <Model>2x100W</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Macro">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="39">nada</Capability>
+  <Capability Min="40" Max="79">jump</Capability>
+  <Capability Min="80" Max="119">gradient</Capability>
+  <Capability Min="120" Max="159">pulse</Capability>
+  <Capability Min="160" Max="199">mutation</Capability>
+  <Capability Min="200" Max="239">Auto</Capability>
+  <Capability Min="240" Max="255">sound</Capability>
+ </Channel>
+ <Channel Name="Macro Speed">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Color macro presets</Capability>
+ </Channel>
+ <Channel Name="White1" Preset="IntensityWhite"/>
+ <Channel Name="Amber1" Preset="IntensityAmber"/>
+ <Channel Name="Amber2" Preset="IntensityAmber"/>
+ <Channel Name="White2" Preset="IntensityWhite"/>
+ <Mode Name="8-CH">
+  <Channel Number="0" ActsOn="0">Master dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Strobe</Channel>
+  <Channel Number="2" ActsOn="2">Macro</Channel>
+  <Channel Number="3" ActsOn="3">Macro Speed</Channel>
+  <Channel Number="4" ActsOn="4">Amber1</Channel>
+  <Channel Number="5" ActsOn="5">White1</Channel>
+  <Channel Number="6" ActsOn="6">Amber2</Channel>
+  <Channel Number="7" ActsOn="7">White2</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="3000" ColourTemperature="6000"/>
+  <Dimensions Weight="5" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="60" DegreesMax="60"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="200" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

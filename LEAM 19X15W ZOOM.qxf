@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.2</Version>
+  <Author>matte</Author>
+ </Creator>
+ <Manufacturer>LEAM</Manufacturer>
+ <Model>19X15W ZOOM</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Pan/Tilt speed" Preset="SpeedPanTiltSlowFast"/>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Red1" Preset="IntensityRed"/>
+ <Channel Name="Green1" Preset="IntensityGreen"/>
+ <Channel Name="Blue1" Preset="IntensityBlue"/>
+ <Channel Name="White1" Preset="IntensityWhite"/>
+ <Channel Name="Red2" Preset="IntensityRed"/>
+ <Channel Name="Green2" Preset="IntensityGreen"/>
+ <Channel Name="Blue2" Preset="IntensityBlue"/>
+ <Channel Name="White2" Preset="IntensityWhite"/>
+ <Channel Name="Red3" Preset="IntensityRed"/>
+ <Channel Name="Green3" Preset="IntensityGreen"/>
+ <Channel Name="Blue3" Preset="IntensityBlue"/>
+ <Channel Name="White3" Preset="IntensityWhite"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Zoom" Preset="BeamZoomBigSmall"/>
+ <Channel Name="AUTO MODE">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
+ <Channel Name="AUTO MODE SPEED">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
+ <Channel Name="X Axis" Preset="PositionXAxis"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="RESET">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Channel Name="led cerchio effetto">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="velocità led cerchio">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Mode Name="17ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Pan/Tilt speed</Channel>
+  <Channel Number="3">Master dimmer</Channel>
+  <Channel Number="4">Red1</Channel>
+  <Channel Number="5">Green1</Channel>
+  <Channel Number="6">Blue1</Channel>
+  <Channel Number="7">White1</Channel>
+  <Channel Number="8">Strobe</Channel>
+  <Channel Number="9">Zoom</Channel>
+  <Channel Number="10">AUTO MODE</Channel>
+  <Channel Number="11">AUTO MODE SPEED</Channel>
+  <Channel Number="12">X Axis</Channel>
+  <Channel Number="13">Tilt fine</Channel>
+  <Channel Number="14">RESET</Channel>
+  <Channel Number="15">led cerchio effetto</Channel>
+  <Channel Number="16">velocità led cerchio</Channel>
+  <Head>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="25ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Pan/Tilt speed</Channel>
+  <Channel Number="3">Master dimmer</Channel>
+  <Channel Number="4">Red1</Channel>
+  <Channel Number="5">Green1</Channel>
+  <Channel Number="6">Blue1</Channel>
+  <Channel Number="7">White1</Channel>
+  <Channel Number="8">Red2</Channel>
+  <Channel Number="9">Green2</Channel>
+  <Channel Number="10">Blue2</Channel>
+  <Channel Number="11">White2</Channel>
+  <Channel Number="12">Red3</Channel>
+  <Channel Number="13">Green3</Channel>
+  <Channel Number="14">Blue3</Channel>
+  <Channel Number="15">White3</Channel>
+  <Channel Number="16">Strobe</Channel>
+  <Channel Number="17">Zoom</Channel>
+  <Channel Number="18">AUTO MODE</Channel>
+  <Channel Number="19">AUTO MODE SPEED</Channel>
+  <Channel Number="20">X Axis</Channel>
+  <Channel Number="21">Tilt fine</Channel>
+  <Channel Number="22">RESET</Channel>
+  <Channel Number="23">led cerchio effetto</Channel>
+  <Channel Number="24">velocità led cerchio</Channel>
+  <Head>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+  <Head>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+   <Channel>15</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="8" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="200" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

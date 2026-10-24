@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>Matteo</Author>
+ </Creator>
+ <Manufacturer>LEAM</Manufacturer>
+ <Model>7R-BEAM small</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Color Wheel">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="7" Preset="ColorMacro" Res1="#ffffff">WHITE</Capability>
+  <Capability Min="8" Max="15" Preset="ColorMacro" Res1="#ff0000">RED</Capability>
+  <Capability Min="16" Max="23" Preset="ColorMacro" Res1="#ffff00">YELLOW</Capability>
+  <Capability Min="24" Max="31" Preset="ColorMacro" Res1="#0000ff">BLUE</Capability>
+  <Capability Min="32" Max="39" Preset="ColorMacro" Res1="#00ff00">GREEN</Capability>
+  <Capability Min="40" Max="47" Preset="ColorMacro" Res1="#ff5500">ORANGE-RED</Capability>
+  <Capability Min="48" Max="55" Preset="ColorMacro" Res1="#ff00ff">ROSE RED</Capability>
+  <Capability Min="56" Max="63" Preset="ColorMacro" Res1="#aa0000">AMARANTH</Capability>
+  <Capability Min="64" Max="71" Preset="ColorMacro" Res1="#5500ff">FLUORESCENCE</Capability>
+  <Capability Min="72" Max="79" Preset="ColorMacro" Res1="#ff5500">ARANCIO</Capability>
+  <Capability Min="80" Max="87" Preset="ColorMacro" Res1="#aaffff">CIANO</Capability>
+  <Capability Min="88" Max="95" Preset="ColorMacro" Res1="#00aa00">OLIVA</Capability>
+  <Capability Min="96" Max="103" Preset="ColorMacro" Res1="#5555ff">PURPLE</Capability>
+  <Capability Min="104" Max="111" Preset="ColorMacro" Res1="#aaaa00">BROWN</Capability>
+  <Capability Min="112" Max="127" Preset="ColorMacro" Res1="#ffaa00">CTO</Capability>
+  <Capability Min="128" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="2" Preset="ShutterClose">OFF</Capability>
+  <Capability Min="3" Max="50" Preset="ShutterOpen">OPEN</Capability>
+  <Capability Min="51" Max="240" Preset="StrobeSlowToFast">STROBE</Capability>
+  <Capability Min="241" Max="255" Preset="ShutterOpen">OPEN</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Gobo Wheel">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="6" Preset="GoboMacro" Res1="ClayPaky/gobo00011.png"></Capability>
+  <Capability Min="7" Max="13"></Capability>
+  <Capability Min="14" Max="20" Preset="GoboMacro" Res1="ClayPaky/gobo00012.png"></Capability>
+  <Capability Min="21" Max="27" Preset="GoboMacro" Res1="ClayPaky/gobo00027.png"></Capability>
+  <Capability Min="28" Max="34"></Capability>
+  <Capability Min="35" Max="41"></Capability>
+  <Capability Min="42" Max="48"></Capability>
+  <Capability Min="49" Max="55"></Capability>
+  <Capability Min="56" Max="62"></Capability>
+  <Capability Min="63" Max="69"></Capability>
+  <Capability Min="70" Max="76"></Capability>
+  <Capability Min="78" Max="83"></Capability>
+  <Capability Min="84" Max="90"></Capability>
+  <Capability Min="91" Max="97"></Capability>
+  <Capability Min="98" Max="104"></Capability>
+  <Capability Min="105" Max="111"></Capability>
+  <Capability Min="112" Max="118"></Capability>
+  <Capability Min="119" Max="127"></Capability>
+  <Capability Min="128" Max="191" Preset="RotationClockwise">LENTA</Capability>
+  <Capability Min="192" Max="255" Preset="RotationCounterClockwise">VELOCE</Capability>
+ </Channel>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="63" Preset="PrismEffectOff">OFF</Capability>
+  <Capability Min="64" Max="127" Preset="PrismEffectOn" Res1="0">8 FACES</Capability>
+  <Capability Min="128" Max="191">16 FACES</Capability>
+  <Capability Min="192" Max="255">24 FACES</Capability>
+ </Channel>
+ <Channel Name="Prism Rotation">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Prism Angle</Capability>
+  <Capability Min="128" Max="191">Rotating clockwise</Capability>
+  <Capability Min="192" Max="255">Rotating anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Frost">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Focus">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255" Preset="NearToFar"></Capability>
+ </Channel>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Pan fine">
+  <Group Byte="1">Effect</Group>
+  <Capability Min="0" Max="255">Pan fine</Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Tilt fine">
+  <Group Byte="1">Effect</Group>
+  <Capability Min="0" Max="255">Tilt fine</Capability>
+ </Channel>
+ <Channel Name="Pan/Tilt Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255" Preset="FastToSlow">SPEED</Capability>
+ </Channel>
+ <Channel Name="Half Colour">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Gobo Shake">
+  <Group Byte="0">Nothing</Group>
+  <Capability Min="0" Max="0">no</Capability>
+  <Capability Min="1" Max="127" Preset="SlowToFast">slow to fast</Capability>
+  <Capability Min="128" Max="255">no</Capability>
+ </Channel>
+ <Channel Name="RESET">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="16 Canali">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Pan fine</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt Speed</Channel>
+  <Channel Number="5">Frost</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Dimmer</Channel>
+  <Channel Number="8">Color Wheel</Channel>
+  <Channel Number="9">Half Colour</Channel>
+  <Channel Number="10">Gobo Wheel</Channel>
+  <Channel Number="11">Gobo Shake</Channel>
+  <Channel Number="12">Focus</Channel>
+  <Channel Number="13">Prism</Channel>
+  <Channel Number="14">Prism Rotation</Channel>
+  <Channel Number="15">RESET</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="16" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="400" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
